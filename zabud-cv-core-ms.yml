@@ -1,0 +1,33 @@
+info:
+  app:
+    name: zabud-cv-core-ms
+    description: Hojas de Vida Application
+    version: 1.0.0
+    encoding: UTF-8
+    java:
+      version: 1.17.0
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  profiles:
+    active: ${ZABUD_ENV}
+  datasource:
+    url: jdbc:postgresql://${PG_DB_HOST}:${PG_DB_PORT}/${PG_DB_NAME}
+    username: ${PG_DB_USERNAME}
+    password: ${PG_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    test-on-borrow: true
+    validation-query: SELECT 1 FROM dual
+  jpa:
+    show-sql: true
+    hibernate:
+      format-sql: true
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
