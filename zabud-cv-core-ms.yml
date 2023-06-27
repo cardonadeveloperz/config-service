@@ -31,3 +31,7 @@ spring:
   sql:
     init:
       mode: always
+
+  server:
+    error:
+      include-stacktrace: never
