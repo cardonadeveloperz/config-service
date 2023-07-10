@@ -13,7 +13,7 @@ spring:
   profiles:
     active: ${ZABUD_ENV}
   datasource:
-    url: jdbc:postgresql://${PG_DB_HOST_QA}:${PG_DB_PORT_QA}/${PG_DB_NAME_QA}
+    url: jdbc:postgresql://${PG_DB_HOST}:${PG_DB_PORT_QA}/${PG_DB_NAME}
     username: ${PG_DB_USERNAME}
     password: ${PG_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
