@@ -31,3 +31,9 @@ spring:
   sql:
     init:
       mode: always
+feign-clients:
+  files:
+    url: http://${FILE_MANAGER_HOST}:${FILE_MANAGER_PORT}/files-manager
+  server:
+    error:
+      include-stacktrace: never
