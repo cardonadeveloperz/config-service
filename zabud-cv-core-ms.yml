@@ -7,6 +7,10 @@ info:
     java:
       version: 1.17.0
 spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
   mvc:
     pathmatch:
       matching-strategy: ant-path-matcher
