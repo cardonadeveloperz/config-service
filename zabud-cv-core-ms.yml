@@ -36,6 +36,7 @@ spring:
         include-stacktrace: never
     flyway:
       baselineOnMigrare: true
+      validate-on-migrate: false
       schemas: zabud,unicolombo,colombo
       createSchemas: true
       locations: db/migration
