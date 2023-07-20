@@ -17,8 +17,6 @@ spring:
       username: ${PG_DB_USERNAME_LOCAL}
       password: ${PG_DB_PASSWORD_LOCAL}
       driver-class-name: org.postgresql.Driver
-      test-on-borrow: true
-      validation-query: SELECT 1 FROM dual
     jpa:
       show-sql: true
       hibernate:
