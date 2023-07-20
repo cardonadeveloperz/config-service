@@ -41,7 +41,7 @@ spring:
       baselineOnMigrare: true
       schemas: zabud,unicolombo,colombo
       createSchemas: true
-      locations: db/migration, db/specific/h2
+      locations: db/migration
   flyway:
         enabled: true
 
