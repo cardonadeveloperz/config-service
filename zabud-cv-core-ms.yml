@@ -42,4 +42,17 @@ spring:
       locations: db/migration
   flyway:
         enabled: true
+multitenant:
+  schemas: zabud,unicolombo,colombo
+  package: com.zabud.plusfanzcore
+logging:
+  level:
+    org:
+      springframework: INFO
+      hibernate:
+        SQL: TRACE
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
 
