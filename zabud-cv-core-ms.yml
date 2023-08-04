@@ -44,7 +44,7 @@ spring:
         enabled: true
 multitenant:
   schemas: zabud,unicolombo,colombo
-  package: com.zabud.plusfanzcore
+  package: zabud-cv-core-ms
 logging:
   level:
     org:
