@@ -39,7 +39,7 @@ feign-clients:
       validate-on-migrate: false
       schemas: zabud,unicolombo,colombo
       createSchemas: true
-      locations: db/migration
+      locations: db/migration, db/specific/h2
   flyway:
         enabled: true
 multitenant:
