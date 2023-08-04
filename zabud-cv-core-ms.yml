@@ -17,17 +17,17 @@ spring:
     username: ${PG_DB_USERNAME_LOCAL}
     password: ${PG_DB_PASSWORD_LOCAL}
     driver-class-name: org.postgresql.Driver
-  jpa:
-    show-sql: true
-    hibernate:
-      format-sql: true
-      ddl-auto: none
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    sql:
-      init:
-        mode: always
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      format-sql: true
+#      ddl-auto: none
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#    sql:
+#      init:
+#        mode: always
 feign-clients:
   files:
     url: http://${FILE_MANAGER_HOST}:${FILE_MANAGER_PORT}/files-manager
