@@ -12,19 +12,19 @@ spring:
     mvc:
       pathmatch:
         matching-strategy: ant-path-matcher
-    datasource:
-      url: jdbc:postgresql://${PG_DB_HOST_LOCAL}:${PG_DB_PORT_LOCAL}/${PG_DB_NAME_LOCAL}
-      username: ${PG_DB_USERNAME_LOCAL}
-      password: ${PG_DB_PASSWORD_LOCAL}
-      driver-class-name: org.postgresql.Driver
-    jpa:
-      show-sql: true
+  datasource:
+    url: jdbc:postgresql://${PG_DB_HOST_LOCAL}:${PG_DB_PORT_LOCAL}/${PG_DB_NAME_LOCAL}
+    username: ${PG_DB_USERNAME_LOCAL}
+    password: ${PG_DB_PASSWORD_LOCAL}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      format-sql: true
+      ddl-auto: none
+    properties:
       hibernate:
-        format-sql: true
-        ddl-auto: none
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     sql:
       init:
         mode: always
