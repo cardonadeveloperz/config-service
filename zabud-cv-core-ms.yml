@@ -13,7 +13,7 @@ spring:
       pathmatch:
         matching-strategy: ant-path-matcher
   datasource:
-    url: jdbc:postgresql://${PG_DB_HOST_LOCAL}:${PG_DB_PORT_LOCAL}/${PG_DB_NAME_LOCAL}
+    url: jdbc:postgresql://${PG_DB_HOST_LOCAL}:${PG_DB_PORT_LOCAL}/${PG_DB_NAME_LOCAL_FLYWAY}
     username: ${PG_DB_USERNAME_LOCAL}
     password: ${PG_DB_PASSWORD_LOCAL}
     driver-class-name: org.postgresql.Driver
